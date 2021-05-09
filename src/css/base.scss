@@ -1,0 +1,18 @@
+@import "font.scss";
+
+$GRAY: #747474;
+$TEXT: #181818;
+$BLUE: #0275B1;
+$GREEN: #02B033;
+
+* {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: Gotham Pro, sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}

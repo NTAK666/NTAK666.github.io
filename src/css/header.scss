@@ -1,0 +1,202 @@
+@import "base.scss";
+
+
+#header {
+    height: 80px;
+
+    .header-container {
+        height: 100%;
+        width: 100%;
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .logo-img {
+                img {
+                    height: 46px;
+                    width: 46px;
+                }
+            }
+        }
+
+        .tabs {
+            font-family: Gotham Pro;
+            font-style: bold;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 11px;
+            text-align: center;
+            text-transform: uppercase;
+            color: $TEXT;
+
+            .tab {
+                margin: auto;
+
+                .header-link {
+                    text-decoration: none;
+                    color: $TEXT;
+                    position: relative;
+                    width: 100%;
+
+                    img {
+                        margin-bottom: 6px;
+                    }
+
+                    p {
+                        padding: 0;
+                        margin: 0;
+                    }
+
+                    &:hover {
+                        color: $BLUE;
+                    }
+
+                    &:hover img {
+                        filter: invert(23%) sepia(76%) saturate(2429%) hue-rotate(182deg) brightness(102%) contrast(98%);
+                    }
+
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        opacity: 0;
+                        bottom: -300%;
+                        left: -100%;
+                        // right: -20px;
+                        transition: 0.5s;
+                        width: 0%;
+                        height: 2px;
+                    }
+                }
+
+                &:hover .header-link:before {
+                    opacity: 1;
+                    width: 300%;
+                    background-color: $BLUE;
+                }
+
+            }
+
+        }
+
+        .search {
+            i {
+                margin-right: 6px;
+                font-size: 26px;
+                color: $BLUE;
+                font-weight: 400;
+            }
+
+            div {
+                input {
+                    font-family: Gotham Pro;
+                    font-weight: lighter;
+                    border-radius: 20px;
+                    line-height: 20px;
+                    font-size: 16px;
+                }
+
+            }
+        }
+
+        .infomation {
+            .avatar {
+                width: 42px;
+                height: 42px;
+                margin-right: 10px;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .infomation {
+                .line {
+                    display: flex;
+
+                    p {
+                        padding: 0;
+                        margin: 0;
+                        margin-right: 4px;
+                    }
+
+                    .name {
+                        font-weight: 600;
+                    }
+
+                    .about {
+                        opacity: .5;
+                    }
+
+                    .views {
+                        color: $GRAY;
+                        font-style: regular;
+                    }
+
+                    .counts {
+                        font-weight: 600;
+                        color: $GREEN;
+                    }
+                }
+            }
+        }
+
+        .other {
+            font-family: Gotham Pro;
+            font-style: bold;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 11px;
+            text-align: center;
+            text-transform: uppercase;
+            color: $TEXT;
+
+            .other-container {
+                margin: auto;
+
+                .header-link {
+                    text-decoration: none;
+                    color: $TEXT;
+                    position: relative;
+                    width: 100%;
+
+                    img {
+                        margin-bottom: 6px;
+                    }
+
+                    p {
+                        padding: 0;
+                        margin: 0;
+                    }
+
+                    &:hover {
+                        color: $BLUE;
+                    }
+
+                    &:hover img {
+                        filter: invert(23%) sepia(76%) saturate(2429%) hue-rotate(182deg) brightness(102%) contrast(98%);
+                    }
+
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        opacity: 0;
+                        bottom: -300%;
+                        left: -100%;
+                        // right: -20px;
+                        transition: 0.5s;
+                        width: 0%;
+                        height: 2px;
+                    }
+                }
+
+                &:hover .header-link:before {
+                    opacity: 1;
+                    width: 300%;
+                    background-color: $BLUE;
+                }
+
+            }
+        }
+    }
+}
