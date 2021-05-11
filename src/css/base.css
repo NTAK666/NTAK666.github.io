@@ -94,7 +94,6 @@
   font-style: italic;
 }
 * {
-  font-family: Gotham Pro;
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
   margin: 0;
@@ -102,6 +101,7 @@
 }
 
 html {
+  font-family: Gotham Pro;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   scroll-behavior: smooth;
