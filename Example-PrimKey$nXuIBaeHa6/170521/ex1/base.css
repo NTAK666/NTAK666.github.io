@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+.rbt-font {
+  font-family: 'Roboto', sans-serif;
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+.effect-dropdown {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.effect-dropdown:hover {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  color: black;
+  background-color: #616161;
+}
+
+.carousel-example-1z {
+  width: 800px;
+  height: 400px;
+}
+
+.logo {
+  width: 265px;
+  height: 150px;
+}
+
+.carousel-fade .carousel-item {
+  opacity: 0;
+  -webkit-transition-duration: .6s;
+          transition-duration: .6s;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
+
+.carousel-fade .carousel-item.active,
+.carousel-fade .carousel-item-next.carousel-item-left,
+.carousel-fade .carousel-item-prev.carousel-item-right {
+  opacity: 1;
+}
+
+.carousel-fade .active.carousel-item-left,
+.carousel-fade .active.carousel-item-right {
+  opacity: 0;
+}
+
+.carousel-fade .carousel-item-next,
+.carousel-fade .carousel-item-prev,
+.carousel-fade .carousel-item.active,
+.carousel-fade .active.carousel-item-left,
+.carousel-fade .active.carousel-item-prev {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.hover-lgi {
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  cursor: pointer;
+}
+
+.hover-lgi:hover {
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  background-color: #bebebe;
+}
+
+.sidebar-post {
+  list-style-type: none;
+}
+
+.sidebar-post .title-sb {
+  padding-left: 10px;
+  width: 247px;
+  height: 50px;
+  line-height: 50px;
+  margin-bottom: 12px;
+}
+
+.sidebar-post .post-item div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sidebar-post .headline {
+  width: 100%;
+  height: 1px;
+  background-color: black;
+}
+
+.footer-bg {
+  background-color: #e6e6e6;
+}
+
+.catalogy-footer ul li {
+  margin-bottom: 12px;
+}
+
+.footer .col-4 ul {
+  list-style-type: none;
+}
+/*# sourceMappingURL=base.css.map */
