@@ -14,37 +14,414 @@
     <meta name="author" content="NGUYỄN TRƯƠNG ANH KIỆT">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- CDN & LINK -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+    <script src="/Example-PrimKey$nXuIBaeHa6/210521/ex2/hover.js"></script>
     <!-- JS -->
     <script>
     </script>
     <!-- CSS -->
     <style>
+        .nav-item {
+            font-size: 12px;
+            margin-right: 12px;
+            border: 1px solid transparent;
+        }
 
+        .nav-item:hover {
+            border: 1px solid black;
+        }
+
+        .btn-cts {
+            border: 1px solid black;
+        }
+
+        .card-title {
+            font-size: 20px;
+        }
+
+        .card-text {
+            font-size: 12px;
+        }
+
+        .card-img-top:hover {
+            transition: all .5s;
+            transform: scale(1.5);
+            padding: 36px;
+        }
+
+        .card {
+            transition: all .5s;
+            overflow: hidden;
+        }
+
+        .card:hover {
+            border: 1px solid black;
+        }
     </style>
-    <title>Document</title>
+    <title>EX 2</title>
 </head>
 
 <body>
-    <header class="container-fluid">
+    <header class="container my-5">
         <div class="row">
             <div class="col-12">
-
+                <nav class="navbar navbar-expand-lg navbar-light border-top border-bottom p-3">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        GIỚI TÍNH
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        NHÃN HIỆU
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        THỂ THAO
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        LOẠI SẢN PHẨM
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        LABLE
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        KÍCH CỠ
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        MÀU
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        BỘ SƯU TẬP
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
             </div>
         </div>
     </header>
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <div class="col-12">
-
+                <div class="row row-cols-1 row-cols-md-4 g-4">
+                    <div class="col mb-3">
+                        <div class="card">
+                            <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/ae613c03b5334383888eac690141f182_9366/Quan_Short_The_Thao_3_Soc_Vai_Det_Primeblue_Designed_2_Move_DJen_GL3981_21_model.jpg"
+                                class="card-img-top" onmouseover="hover(this);" onmouseout="unhover(this);">
+                            <div class="card-body">
+                                <h5 class="card-title">Quần Short Adidias</h6>
+                                    <p class="card-text">Quần Short Thể Thao 3 Sọc Vải Dệt Primeblue Designed 2 Move</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class=" btn btn-sm btn-price shadow-none">400.000 VND</button>
+                                <a href="/Example-PrimKey$nXuIBaeHa6/210521/ex2/details.html" type="button" class=" btn btn-sm btn-cts">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-3">
+                        <div class="card">
+                            <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/ae613c03b5334383888eac690141f182_9366/Quan_Short_The_Thao_3_Soc_Vai_Det_Primeblue_Designed_2_Move_DJen_GL3981_21_model.jpg"
+                                class="card-img-top" onmouseover="hover(this);" onmouseout="unhover(this);">
+                            <div class="card-body">
+                                <h5 class="card-title">Quần Short Adidias</h5>
+                                <p class="card-text">Quần Short Thể Thao 3 Sọc Vải Dệt Primeblue Designed 2 Move</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class=" btn btn-sm btn-price shadow-none">400.000 VND</button>
+                                <a href="/Example-PrimKey$nXuIBaeHa6/210521/ex2/details.html" type="button" class=" btn btn-sm btn-cts">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-3">
+                        <div class="card">
+                            <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/ae613c03b5334383888eac690141f182_9366/Quan_Short_The_Thao_3_Soc_Vai_Det_Primeblue_Designed_2_Move_DJen_GL3981_21_model.jpg"
+                                class="card-img-top" onmouseover="hover(this);" onmouseout="unhover(this);">
+                            <div class="card-body">
+                                <h5 class="card-title">Quần Short Adidias</h5>
+                                <p class="card-text">Quần Short Thể Thao 3 Sọc Vải Dệt Primeblue Designed 2 Move</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class=" btn btn-sm btn-price shadow-none">400.000 VND</button>
+                                <a href="/Example-PrimKey$nXuIBaeHa6/210521/ex2/details.html" type="button" class=" btn btn-sm btn-cts">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-3">
+                        <div class="card">
+                            <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/ae613c03b5334383888eac690141f182_9366/Quan_Short_The_Thao_3_Soc_Vai_Det_Primeblue_Designed_2_Move_DJen_GL3981_21_model.jpg"
+                                class="card-img-top" onmouseover="hover(this);" onmouseout="unhover(this);">
+                            <div class="card-body">
+                                <h5 class="card-title">Quần Short Adidias</h5>
+                                <p class="card-text">Quần Short Thể Thao 3 Sọc Vải Dệt Primeblue Designed 2 Move</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class=" btn btn-sm btn-price shadow-none">400.000 VND</button>
+                                <a href="/Example-PrimKey$nXuIBaeHa6/210521/ex2/details.html" type="button" class=" btn btn-sm btn-cts">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-3">
+                        <div class="card">
+                            <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/ae613c03b5334383888eac690141f182_9366/Quan_Short_The_Thao_3_Soc_Vai_Det_Primeblue_Designed_2_Move_DJen_GL3981_21_model.jpg"
+                                class="card-img-top" onmouseover="hover(this);" onmouseout="unhover(this);">
+                            <div class="card-body">
+                                <h5 class="card-title">Quần Short Adidias</h6>
+                                    <p class="card-text">Quần Short Thể Thao 3 Sọc Vải Dệt Primeblue Designed 2 Move</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class=" btn btn-sm btn-price shadow-none">400.000 VND</button>
+                                <a href="/Example-PrimKey$nXuIBaeHa6/210521/ex2/details.html" type="button" class=" btn btn-sm btn-cts">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-3">
+                        <div class="card">
+                            <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/ae613c03b5334383888eac690141f182_9366/Quan_Short_The_Thao_3_Soc_Vai_Det_Primeblue_Designed_2_Move_DJen_GL3981_21_model.jpg"
+                                class="card-img-top" onmouseover="hover(this);" onmouseout="unhover(this);">
+                            <div class="card-body">
+                                <h5 class="card-title">Quần Short Adidias</h5>
+                                <p class="card-text">Quần Short Thể Thao 3 Sọc Vải Dệt Primeblue Designed 2 Move</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class=" btn btn-sm btn-price shadow-none">400.000 VND</button>
+                                <a href="/Example-PrimKey$nXuIBaeHa6/210521/ex2/details.html" type="button" class=" btn btn-sm btn-cts">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-3">
+                        <div class="card">
+                            <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/ae613c03b5334383888eac690141f182_9366/Quan_Short_The_Thao_3_Soc_Vai_Det_Primeblue_Designed_2_Move_DJen_GL3981_21_model.jpg"
+                                class="card-img-top" onmouseover="hover(this);" onmouseout="unhover(this);">
+                            <div class="card-body">
+                                <h5 class="card-title">Quần Short Adidias</h5>
+                                <p class="card-text">Quần Short Thể Thao 3 Sọc Vải Dệt Primeblue Designed 2 Move</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class=" btn btn-sm btn-price shadow-none">400.000 VND</button>
+                                <a href="/Example-PrimKey$nXuIBaeHa6/210521/ex2/details.html" type="button" class=" btn btn-sm btn-cts">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-3">
+                        <div class="card">
+                            <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/ae613c03b5334383888eac690141f182_9366/Quan_Short_The_Thao_3_Soc_Vai_Det_Primeblue_Designed_2_Move_DJen_GL3981_21_model.jpg"
+                                class="card-img-top" onmouseover="hover(this);" onmouseout="unhover(this);">
+                            <div class="card-body">
+                                <h5 class="card-title">Quần Short Adidias</h5>
+                                <p class="card-text">Quần Short Thể Thao 3 Sọc Vải Dệt Primeblue Designed 2 Move</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class=" btn btn-sm btn-price shadow-none">400.000 VND</button>
+                                <a href="/Example-PrimKey$nXuIBaeHa6/210521/ex2/details.html" type="button" class=" btn btn-sm btn-cts">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-3">
+                        <div class="card">
+                            <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/ae613c03b5334383888eac690141f182_9366/Quan_Short_The_Thao_3_Soc_Vai_Det_Primeblue_Designed_2_Move_DJen_GL3981_21_model.jpg"
+                                class="card-img-top" onmouseover="hover(this);" onmouseout="unhover(this);">
+                            <div class="card-body">
+                                <h5 class="card-title">Quần Short Adidias</h6>
+                                    <p class="card-text">Quần Short Thể Thao 3 Sọc Vải Dệt Primeblue Designed 2 Move</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class=" btn btn-sm btn-price shadow-none">400.000 VND</button>
+                                <a href="/Example-PrimKey$nXuIBaeHa6/210521/ex2/details.html" type="button" class=" btn btn-sm btn-cts">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-3">
+                        <div class="card">
+                            <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/ae613c03b5334383888eac690141f182_9366/Quan_Short_The_Thao_3_Soc_Vai_Det_Primeblue_Designed_2_Move_DJen_GL3981_21_model.jpg"
+                                class="card-img-top" onmouseover="hover(this);" onmouseout="unhover(this);">
+                            <div class="card-body">
+                                <h5 class="card-title">Quần Short Adidias</h5>
+                                <p class="card-text">Quần Short Thể Thao 3 Sọc Vải Dệt Primeblue Designed 2 Move</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class=" btn btn-sm btn-price shadow-none">400.000 VND</button>
+                                <a href="/Example-PrimKey$nXuIBaeHa6/210521/ex2/details.html" type="button" class=" btn btn-sm btn-cts">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-3">
+                        <div class="card">
+                            <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/ae613c03b5334383888eac690141f182_9366/Quan_Short_The_Thao_3_Soc_Vai_Det_Primeblue_Designed_2_Move_DJen_GL3981_21_model.jpg"
+                                class="card-img-top" onmouseover="hover(this);" onmouseout="unhover(this);">
+                            <div class="card-body">
+                                <h5 class="card-title">Quần Short Adidias</h5>
+                                <p class="card-text">Quần Short Thể Thao 3 Sọc Vải Dệt Primeblue Designed 2 Move</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class=" btn btn-sm btn-price shadow-none">400.000 VND</button>
+                                <a href="/Example-PrimKey$nXuIBaeHa6/210521/ex2/details.html" type="button" class=" btn btn-sm btn-cts">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-3">
+                        <div class="card">
+                            <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/ae613c03b5334383888eac690141f182_9366/Quan_Short_The_Thao_3_Soc_Vai_Det_Primeblue_Designed_2_Move_DJen_GL3981_21_model.jpg"
+                                class="card-img-top" onmouseover="hover(this);" onmouseout="unhover(this);">
+                            <div class="card-body">
+                                <h5 class="card-title">Quần Short Adidias</h5>
+                                <p class="card-text">Quần Short Thể Thao 3 Sọc Vải Dệt Primeblue Designed 2 Move</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class=" btn btn-sm btn-price shadow-none">400.000 VND</button>
+                                <a href="/Example-PrimKey$nXuIBaeHa6/210521/ex2/details.html" type="button" class=" btn btn-sm btn-cts">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-3">
+                        <div class="card">
+                            <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/ae613c03b5334383888eac690141f182_9366/Quan_Short_The_Thao_3_Soc_Vai_Det_Primeblue_Designed_2_Move_DJen_GL3981_21_model.jpg"
+                                class="card-img-top" onmouseover="hover(this);" onmouseout="unhover(this);">
+                            <div class="card-body">
+                                <h5 class="card-title">Quần Short Adidias</h6>
+                                    <p class="card-text">Quần Short Thể Thao 3 Sọc Vải Dệt Primeblue Designed 2 Move</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class=" btn btn-sm btn-price shadow-none">400.000 VND</button>
+                                <a href="/Example-PrimKey$nXuIBaeHa6/210521/ex2/details.html" type="button" class=" btn btn-sm btn-cts">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-3">
+                        <div class="card">
+                            <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/ae613c03b5334383888eac690141f182_9366/Quan_Short_The_Thao_3_Soc_Vai_Det_Primeblue_Designed_2_Move_DJen_GL3981_21_model.jpg"
+                                class="card-img-top" onmouseover="hover(this);" onmouseout="unhover(this);">
+                            <div class="card-body">
+                                <h5 class="card-title">Quần Short Adidias</h5>
+                                <p class="card-text">Quần Short Thể Thao 3 Sọc Vải Dệt Primeblue Designed 2 Move</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class=" btn btn-sm btn-price shadow-none">400.000 VND</button>
+                                <a href="/Example-PrimKey$nXuIBaeHa6/210521/ex2/details.html" type="button" class=" btn btn-sm btn-cts">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-3">
+                        <div class="card">
+                            <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/ae613c03b5334383888eac690141f182_9366/Quan_Short_The_Thao_3_Soc_Vai_Det_Primeblue_Designed_2_Move_DJen_GL3981_21_model.jpg"
+                                class="card-img-top" onmouseover="hover(this);" onmouseout="unhover(this);">
+                            <div class="card-body">
+                                <h5 class="card-title">Quần Short Adidias</h5>
+                                <p class="card-text">Quần Short Thể Thao 3 Sọc Vải Dệt Primeblue Designed 2 Move</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class=" btn btn-sm btn-price shadow-none">400.000 VND</button>
+                                <a href="/Example-PrimKey$nXuIBaeHa6/210521/ex2/details.html" type="button" class=" btn btn-sm btn-cts">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-3">
+                        <div class="card">
+                            <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/ae613c03b5334383888eac690141f182_9366/Quan_Short_The_Thao_3_Soc_Vai_Det_Primeblue_Designed_2_Move_DJen_GL3981_21_model.jpg"
+                                class="card-img-top" onmouseover="hover(this);" onmouseout="unhover(this);">
+                            <div class="card-body">
+                                <h5 class="card-title">Quần Short Adidias</h5>
+                                <p class="card-text">Quần Short Thể Thao 3 Sọc Vải Dệt Primeblue Designed 2 Move</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class=" btn btn-sm btn-price shadow-none">400.000 VND</button>
+                                <a href="/Example-PrimKey$nXuIBaeHa6/210521/ex2/details.html" type="button" class=" btn btn-sm btn-cts">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <footer class="container-fluid">
+    <footer class="container">
         <div class="row">
             <div class="col-12">
 
