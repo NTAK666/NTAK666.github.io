@@ -8,12 +8,10 @@
 }
 
 .effect-dropdown {
-  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
 .effect-dropdown:hover {
-  -webkit-transition: all 0.5s;
   transition: all 0.5s;
   color: black;
   background-color: #616161;
@@ -31,9 +29,7 @@
 
 .carousel-fade .carousel-item {
   opacity: 0;
-  -webkit-transition-duration: .6s;
-          transition-duration: .6s;
-  -webkit-transition-property: opacity;
+  transition-duration: .6s;
   transition-property: opacity;
 }
 
@@ -53,20 +49,16 @@
 .carousel-fade .carousel-item.active,
 .carousel-fade .active.carousel-item-left,
 .carousel-fade .active.carousel-item-prev {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
+  transform: translateX(0);
+  transform: translate3d(0, 0, 0);
 }
 
 .hover-lgi {
-  -webkit-transition: all .2s ease;
   transition: all .2s ease;
   cursor: pointer;
 }
 
 .hover-lgi:hover {
-  -webkit-transition: all .2s ease;
   transition: all .2s ease;
   background-color: #bebebe;
 }
@@ -84,8 +76,6 @@
 }
 
 .sidebar-post .post-item div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -106,4 +96,3 @@
 .footer .col-4 ul {
   list-style-type: none;
 }
-/*# sourceMappingURL=base.css.map */
