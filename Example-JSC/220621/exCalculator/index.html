@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Nguyễn Trương Anh Kiệt">
+    <meta name="description" content="Nguyễn Trương Anh Kiệt">
+    <meta name="keywords" content="ntak,ntak666,anhkiet,nguyentruonganhkiet,ntak666.tech,technology,ntak.tech">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="author" content="NGUYỄN TRƯƠNG ANH KIỆT">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/src/image/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/src/image/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/src/image/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/src/image/favicon/site.webmanifest">
+
+    <title>NGUYỄN TRƯƠNG ANH KIỆT</title>
+</head>
+
+<body>
+    <script src="g.js"></script>
+
+
+    <div class="container d-flex justify-content-center mt-3">
+        <div class="box">
+            <div class="content">
+                <div class="calculator d-flex flex-column w-100 ">
+                    <div class="row h-25">
+                        <div class="col-12">
+                            <span class="d-flex justify-content-between align-items-center">
+                                <p><strong style="font-size:24px">CASIO</strong></p>
+                                <p>fx580VN-X PLUS</p>
+                            </span>
+                            <span class="text-center">
+                                <p><b>C L A S S W I Z</b></p>
+                            </span>
+                        </div>
+                        <div class="col-12 w-100 box-one">
+                            <div id="contain-middle">
+                                <input id="result" type="text" value="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row h-25">
+                        <div class="col-12 h-100 box-two">
+                            <span>
+                                <small>x<sup>2</sup></small>
+                                <small>x<sup>3</sup></small>
+                                <small>x<sup>4</sup></small>
+                                <small>x<sup>5</sup></small>
+                                <small>x<sup>6</sup></small>
+                            </span>
+                            <span>
+                                <button class="btn btn-dark" onclick="x2('2')">x<sup>2</sup></button>
+                                <button class="btn btn-dark" onclick="x3('3')">x<sup>3</sup></button>
+                                <button class="btn btn-dark" onclick="x4('4')">x<sup>4</sup></button>
+                                <button class="btn btn-dark" onclick="x5('5')">x<sup>5</sup></button>
+                                <button class="btn btn-dark" onclick="x6('6')">x<sup>6</sup></button>
+                            </span>
+                            <span>
+                                <small>Log</small>
+                                <small>Ln</small>
+                                <small>e</small>
+                                <small>cot</small>
+                                <small>cotx</small>
+                            </span>
+                            <span>
+                                <button class="btn btn-dark" onclick="Log()">Log</button>
+                                <button class="btn btn-dark" onclick="Ln()">Ln</button>
+                                <button class="btn btn-dark" onclick="e()">e</button>
+                                <button class="btn btn-dark" onclick="cot()">cot</button>
+                                <button class="btn btn-dark" onclick="coth()">coth</button>
+                            </span>
+                            <span>
+                                <small>asinh</small>
+                                <small>asin</small>
+                                <small>sinh</small>
+                                <small>sin</small>
+                                <small>cosh</small>
+                            </span>
+                            <span>
+                                <button class="btn btn-dark" onclick="asinh()">asinh</button>
+                                <button class="btn btn-dark" onclick="asin()">asin</button>
+                                <button class="btn btn-dark" onclick="sinh()">sinh</button>
+                                <button class="btn btn-dark" onclick="sin()">sin</button>
+                                <button class="btn btn-dark" onclick="cos()">cos</button>
+                            </span>
+                            <span>
+                                <small>acos</small>
+                                <small>acosh</small>
+                                <small>tan</small>
+                                <small>tanh</small>
+                                <small>atanh</small>
+                            </span>
+                            <span>
+                                <button class="btn btn-dark" onclick="acos()">acos</button>
+                                <button class="btn btn-dark" onclick="acosh()">acosh</button>
+                                <button class="btn btn-dark" onclick="tan()">tan</button>
+                                <button class="btn btn-dark" onclick="tanh()">tanh</button>
+                                <button class="btn btn-dark" onclick="atanh()">atanh</button>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="row h-25">
+                        <div class="col-12 h-100 box-three">
+                            <span>
+                                <small>CONST</small>
+                                <small>CONVERT</small>
+                                <small>RESET</small>
+                                <small>INS <font color="red">Undo</font></small>
+                                <small>OFF</small>
+                            </span>
+                            <span>
+                                <button class="btn btn-dark" onclick="dis('7')">7</button>
+                                <button class="btn btn-dark" onclick="dis('8')">8</button>
+                                <button class="btn btn-dark" onclick="dis('9')">9</button>
+                                <button class="btn btn-dark" onclick="del()">DEL</button>
+                                <button class="btn btn-dark" onclick="AC()">AC</button>
+                            </span>
+                            <span>
+                                <small></small>
+                                <small></small>
+                                <small></small>
+                                <small>nPc <font color="red">GCD</font></small>
+                                <small>nCr <font color="red">LCM</font></small>
+                            </span>
+                            <span>
+                                <button class="btn btn-dark" onclick="dis('4')">4</button>
+                                <button class="btn btn-dark" onclick="dis('5')">5</button>
+                                <button class="btn btn-dark" onclick="dis('6')">6</button>
+                                <button class="btn btn-dark" onclick="dis('*')">X</button>
+                                <button class="btn btn-dark" onclick="dis('/')">/</button>
+                            </span>
+                            <span>
+                                <small></small>
+                                <small></small>
+                                <small></small>
+                                <small>Pol <font color="red">Int</font></small>
+                                <small>Rec <font color="red">Intg</font></small>
+                            </span>
+                            <span>
+                                <button class="btn btn-dark" onclick="dis('1')">1</button>
+                                <button class="btn btn-dark" onclick="dis('2')">2</button>
+                                <button class="btn btn-dark" onclick="dis('3')">3</button>
+                                <button class="btn btn-dark" onclick="dis('+')">+</button>
+                                <button class="btn btn-dark" onclick="dis('-')">-</button>
+                            </span>
+                            <span>
+                                <small>RND</small>
+                                <small>RAN# <font color="red">Rit</font></small>
+                                <small>π <font color="red">e</font></small>
+                                <small>% <font color="red">PreAns</font></small>
+                                <small>≈</small>
+                            </span>
+                            <span>
+                                <button class="btn btn-dark" onclick="dis('0')">0</button>
+                                <button class="btn btn-dark" onclick="dis('.')">.</button>
+                                <button class="btn btn-dark" onclick="dis('')">EXP</button>
+                                <button class="btn btn-dark" onclick="dis('')">ANS</button>
+                                <button class="btn btn-dark" onclick="solve()">=</button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

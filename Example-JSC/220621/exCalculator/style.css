@@ -1,0 +1,93 @@
+.box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    box-shadow: 0 0 5px rgb(190, 190, 190), inset 0 0 10px rgb(104, 104, 104);
+    border-radius: 40px;
+}
+
+.content {
+    width: 100%;
+    padding: 10%;
+    height: 100%;
+}
+
+.calculator>.row>.box-two>span {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 1px;
+}
+
+.calculator>.row>.box-three>span {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 4px;
+}
+
+.calculator>.row>.box-one {
+    width: 100%;
+    box-shadow: inset 0 0 10px gray;
+    height: 20vh;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.calculator>.row>.box-one>#contain-middle {
+    width: 100%;
+    height: 16vh;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.calculator>.row>.box-one>#contain-middle>input {
+    width: 100%;
+    height: 16vh;
+    outline: none;
+    border: none;
+    font-size: 36px;
+    text-align: right;
+}
+
+button {
+    width: 70px;
+    height: 40px;
+    border-radius: 14px !important;
+}
+
+small {
+    width: 70px;
+    text-align: center;
+}
+
+@media (min-width: 576px) {
+    .box {
+        width: 90%;
+    }
+}
+
+@media (min-width: 768px) {
+    .box {
+        width: 70%;
+    }
+}
+
+@media (min-width: 992px) {
+    .box {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .box {
+        width: 40%;
+
+    }
+}
+
+@media (min-width: 1400px) {
+    .box {
+        width: 40%;
+    }
+}
